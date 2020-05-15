@@ -1,0 +1,14 @@
+---
+- hosts: nginx-server
+  tasks:
+    - name: install apache
+      become: yes
+      become_method: su
+      become_user: root
+      yum:
+        name: httpd
+        state: latest 
+    - name: start httpd after installed
+      service:
+        name: httpd
+        state: stopped

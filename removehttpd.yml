@@ -1,0 +1,11 @@
+---
+- hosts: nginx-server
+  tasks:
+    - name: install apache
+      become: yes
+      become_method: su
+      become_user: root
+      yum:
+        name: httpd
+        state: absent
+

@@ -1,0 +1,4 @@
+- hosts: kuberCluster
+  roles:
+    - mysqlChart
+
