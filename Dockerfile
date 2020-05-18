@@ -13,3 +13,5 @@ VOLUME [ "/ansible" ]
 ARG ANSIBLE_VERSION=2.6
 
 RUN pip install ansible==$ANSIBLE_VERSION
+
+RUN adduser -D -g '' skorikkirill7
