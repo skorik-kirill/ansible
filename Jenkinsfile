@@ -1,7 +1,7 @@
 node('pod'){
  stage('build ansible image'){
   container('docker'){
-       app = docker.build("us.gcr.io/sincere-hybrid-274219/ansible2.6")
+       app = docker.build("us.gcr.io/sincere-hybrid-274219/ansible")
       }
  }
  stage('push to repo ')
