@@ -1,0 +1,5 @@
+- hosts: kuberCluster
+  roles:
+    - promehteus
+    - grafana
+
